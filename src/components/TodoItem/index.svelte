@@ -42,7 +42,7 @@
       {#if workers.length <= 0}
         <span>할당 된 작업자가 없습니다.</span>
       {/if}
-      {#each workers as { name }, index}
+      {#each workers as name, index}
         <div class="todo-item__worker__item">
           { index + 1 }: { name }
         </div>
